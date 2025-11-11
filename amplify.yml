@@ -3,6 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
+        - sudo apt-get update -y
+        - sudo apt-get install -y xz-utils
         - wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.3-stable.tar.xz
         - tar xf flutter_linux_3.24.3-stable.tar.xz
         - export PATH="$PATH:`pwd`/flutter/bin"
