@@ -1,0 +1,32 @@
+name: studyshare_app
+description: "A new Flutter project."
+publish_to: "none" # Prevents accidental publishing to pub.dev
+version: 1.0.0+1
+
+environment:
+  # Using a current, stable Dart SDK range
+  sdk: '>=3.3.0 <4.0.0' 
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ✅ User Authentication & Mock Data Storage
+  shared_preferences: ^2.2.3 
+
+  # ✅ File Picker for various document types
+  file_picker: ^8.0.3
+
+  # ✅ To open the selected/downloaded files
+  open_file: ^3.3.0
+  http: ^1.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Linter package for checking code style
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
